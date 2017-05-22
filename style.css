@@ -19,8 +19,8 @@
       position: relative;
       background-image: url(./images/friendcircle-banner.png);
       background-repeat: no-repeat;
-      background-position: center top;
-      height: 21rem;
+      background-position: center 4rem;
+      height: 25rem;
       background-size: auto 21rem;
     }
     
