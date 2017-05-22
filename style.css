@@ -2,19 +2,19 @@
       margin: 0;
       padding: 0;
     }
-
+    
     html {
       font-size: 62.5%;
     }
-
+    
     body {
       font-size: 1.2rem;
     }
-
+    
     a:-webkit-any-link {
       text-decoration: none;
     }
-
+    
     header {
       position: relative;
       background-image: url(./images/friendcircle-banner.png);
@@ -23,37 +23,37 @@
       height: 21rem;
       background-size: auto 21rem;
     }
-
+    
     .header-top {
       height: 4rem;
       background-color: #2A2C2F;
       display: flex;
       justify-content: space-between;
     }
-
+    
     .back {
       display: flex;
       align-items: center;
       font-size: 1.4rem;
       color: #fff;
     }
-
+    
     .center {
       display: flex;
       align-items: center;
       font-size: 1.6rem;
       color: #fff;
     }
-
+    
     .right {
       margin-right: 1.2rem;
       margin-left: 2.7rem;
     }
-
+    
     .friendcircle-banner {
       width: 100%;
     }
-
+    
     .my-info {
       position: absolute;
       right: 1.6rem;
@@ -61,21 +61,21 @@
       display: flex;
       align-items: center;
     }
-
+    
     .nike-name {
       font-size: 1.6rem;
       color: #fff;
       margin-right: 1.2rem;
       text-shadow: 1px 1px 0 rgba(0, 0, 0, .7);
     }
-
+    
     .my-avatar {
       width: 4.8rem;
       height: 4.8rem;
       border-radius: 4px;
       border: 1px solid #fff;
     }
-
+    
     .message-red {
       background-color: red;
       height: .8rem;
@@ -85,54 +85,54 @@
       top: -2.4rem;
       right: .4rem;
     }
-
+    
     .content-list {
       padding: 1.6rem;
       border-bottom: 1px solid #ebebeb;
       display: flex;
     }
-
+    
     .content {
       flex: 1;
       color: #41454d;
     }
-
+    
     .content-info {
       margin-top: .2rem;
       font-size: 1.4rem;
     }
-
+    
     .user-name {
       font-size: 1.5rem;
       font-weight: bold;
     }
-
+    
     .img-list {
       margin-top: .8rem;
       margin-bottom: 1.2rem;
     }
-
+    
     .img-list-item {
       margin-top: .4rem;
       display: flex;
       align-items: center;
     }
-
+    
     .one-img {
       width: 17.2rem;
       height: 17.2rem;
     }
-
+    
     .four-img {
       width: 45%;
       margin-right: .4rem;
     }
-
+    
     .seven-img {
       width: 30%;
       margin-right: .4rem;
     }
-
+    
     .share {
       display: flex;
       align-items: center;
@@ -140,19 +140,19 @@
       border-radius: 4px;
       margin-top: .8rem;
     }
-
+    
     .share-avatar {
       border-radius: 4px;
       width: 4rem;
       height: 4rem;
       margin: .6rem;
     }
-
+    
     .share-info {
       font-size: 1.3rem;
       color: #41454d;
     }
-
+    
     .praise-wrap {
       display: flex;
       justify-content: space-between;
@@ -162,57 +162,65 @@
       font-size: 1.2rem;
       color: #80858c;
     }
-
+    
     .praise-wrap>div {
       display: flex;
       align-items: center;
       width: 6rem;
     }
-
+    
     .praise-wrap>div img {
       margin-right: .4rem;
       height: 1.7rem;
     }
-
+    
+    .praised-img {
+      display: none;
+    }
+    
+    .praise-img {
+      display: block;
+    }
+    
     .time {
       color: #acb1b7;
       font-size: 1.2rem;
     }
-
+    
     .user-avatar {
       height: 4rem;
       border-radius: 4px;
       margin-right: .8rem;
     }
-
+    
     .comment-list {
       font-size: 1.4rem;
       margin-top: .8rem;
     }
-
+    
     .comment-item {
       margin-top: .4rem;
     }
-
+    
     .user-reply {
       color: #5bafff;
     }
-
+    
     .reply {
       margin-left: .2rem;
       margin-right: .2rem;
     }
-
+    
     .more-reply {
       font-size: 1.2rem;
       color: #acb1b7;
       margin-top: .8rem;
     }
-
+    
     .more-reply>div {
       display: none;
     }
-
+    
     footer {
       font-size: 1.2rem;
       color: #acb1b7;

@@ -1,16 +1,23 @@
-window.onload = function () {
+window.onload = function() {
   // 点赞
   (function praise() {
     const praise = document.getElementsByClassName('praise');
     const praiseArray = [...praise];
     for (let i of praiseArray) {
+      const span = i.getElementsByTagName('span')[0];
+      const praiseImg = i.getElementsByClassName('praise-img')[0];
+      const praisedImg = i.getElementsByClassName('praised-img')[0];
       i.praised = false;
-      i.onclick = function () {
-        const span = i.getElementsByTagName('span')[0];
+      i.onclick = function() {
+
         if (!i.praised) {
           span.innerText = Math.trunc(span.innerText) + 1;
+          praiseImg.style.display = 'none';
+          praisedImg.style.display = 'block';
         } else {
           span.innerText = Math.trunc(span.innerText) - 1;
+          praiseImg.style.display = 'block';
+          praisedImg.style.display = 'none';
         }
         i.praised = !i.praised
       }
@@ -32,14 +39,15 @@ window.onload = function () {
         }
         spread.style.display = 'block';
         packUp.style.display = 'none';
-        spread.onclick = function () {
+        spread.getElementsByTagName('span')[0].innerText = commentItemLength;
+        spread.onclick = function() {
           for (let j of commentItemArray.slice(3)) {
             j.style.display = 'block';
           }
           spread.style.display = 'none';
           packUp.style.display = 'block';
         }
-        packUp.onclick = function () {
+        packUp.onclick = function() {
           for (let j of commentItemArray.slice(3)) {
             j.style.display = 'none';
           }
@@ -56,7 +64,7 @@ window.onload = function () {
     const main = document.getElementsByTagName('main')[0];
     for (let i of deleteArray) {
       const contentNode = i.parentNode.parentNode.parentNode;
-      i.onclick = function () {
+      i.onclick = function() {
         main.removeChild(contentNode)
       }
     }
